@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    double A, B, C, X, Y, R1, R2;
+    scanf("%lf%lf%lf", &A, &B, &C);
+    X = pow(B, 2)-(4*A*C);
+    Y = sqrt(X);
+    R1 = (-B+Y)/(2*A);
+    R2 = (-B-Y)/(2*A);
+    if((A != 0 ) && (X >= 0))
+    {
+        printf("R1 = %.5lf\nR2 = %.5lf\n", R1, R2);
+    }
+    else
+    {
+        printf("Impossivel calcular\n");
+    }
+    return 0;
+}
