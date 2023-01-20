@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int a, hrs, min, sec;
+    scanf("%d", &a);
+    hrs = a / 3600;
+    a = a % 3600;
+    min = a / 60;
+    sec = a % 60;
+    printf("%d:%d:%d\n", hrs, min, sec);
+    return 0;
+}
