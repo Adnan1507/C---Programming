@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int a, b, c, d, e, f, g, h;
+    scanf("%d%d%d%d", &a, &b, &c, &d);
+    c = (c * 60) + d;
+    a = (a * 60) + b;
+    e = 1440;
+    if(a<c)
+    {
+        f = c - a;
+        g = f / 60;
+        h = f % 60;
+        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", g, h);
+    }
+    else if(a>c)
+    {
+        f = (1440 - a) + c;
+        g = f / 60;
+        h = f % 60;
+        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", g, h);
+    }
+    else if(a == c)
+    {
+        printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
+    }
+    return 0;
+}
