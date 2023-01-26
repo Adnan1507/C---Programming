@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+    double a, c, d, e, f, g, h, j;
+    scanf("%lf", &a);
+    if(a>4500)
+    {
+        e = a - 4500;
+        f = (e*28)/100;
+        d = a - 3000 - e;
+        g = (d*18)/100;
+        c = a - 2000 - e - d;
+        h = (c*8)/100;
+        j = f+g+h;
+        printf("R$ %.2lf\n", j);
+    }
+    else if((a>3000)&&(a<=4500))
+    {
+        d = a - 3000;
+        g = (d*18)/100;
+        c = a - 2000 - d;
+        h = (c*8)/100;
+        j = g+h;
+        printf("R$ %.2lf\n", j);
+    }
+    else if((a>2000)&&(a<=3000))
+    {
+        c = a - 2000 - d;
+        h = (c*8)/100;
+        j = h;
+        printf("R$ %.2lf\n", j);
+    }
+    else if(a<2000)
+    {
+        printf("Isento\n");
+    }
+    return 0;
+}
