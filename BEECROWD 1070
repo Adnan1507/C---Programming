@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int i, n, a;
+    scanf("%d", &n);
+    i = n;
+    a = n+11;
+    while(i<=a)
+    {
+        if(i%2!=0)
+        {
+            printf("%d\n", i);
+        }
+        i++;
+    }
+    return 0;
+}
