@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    double n, a, b, c, d, e, i;
+    scanf("%lf", &n);
+    i=1;
+    while(i<=n)
+    {
+        scanf("%lf%lf%lf", &a ,&b, &c);
+        d = (a*2)+(b*3)+(c*5);
+        e = d/10;
+        printf("%.1lf\n", e);
+        i++;
+    }
+    return 0;
+}
